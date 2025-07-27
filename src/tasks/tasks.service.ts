@@ -14,7 +14,7 @@ export class TasksService {
   }
 
   async updateTask(id: number, data: { name?: string; description?: string }) {
-    return await this.prisma.group.update({
+    return await this.prisma.task.update({
       where: { id },
       data,
     });
